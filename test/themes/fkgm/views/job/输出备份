@@ -1,0 +1,24 @@
+var societyList=[
+<?php foreach ($zhaopin_result_shehui as $key => $value) {
+?>
+{
+        job:'<?php echo $value['name']; ?>',
+        num:'<?php echo $value['number'];?>',
+        times:'<?php $time = $value['time']; echo $time[0]; ?>',
+        require:[<?php echo mb_substr($value['body'],0,50,'UTF-8');?>]
+}
+<?php
+}?>
+];
+var societyCont=[
+<?php foreach ($zhaopin_result_shehui as $key => $value) {
+?>
+{
+        job:'<?php echo $value['name']; ?>',
+        num:'<?php echo $value['number'];?>',
+        times:'<?php $time = $value['time']; echo $time[0]; ?>',
+        require:[<?php echo mb_substr($value['body'],0,50,'UTF-8');?>]
+}
+<?php
+}?>
+];

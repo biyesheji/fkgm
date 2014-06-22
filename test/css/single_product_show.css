@@ -1,0 +1,100 @@
+/**
+ *
+ * @file:     这是single-prodocu.html页面的单一产品展示效果样式文件
+ * @author:   john
+ * @update:   2014/3/24
+ * @note:
+ * @doc:
+ */
+
+/* reset */
+ul,li,img {
+	margin: 0;
+	padding: 0;
+}
+img {
+	border: none;
+}
+li {
+	list-style: none;
+}
+
+/* 大图上的遮罩层部分 */
+#single-product-img {
+	position: relative;
+}
+#single-product-img img.big-img {
+	width: 270px;
+	height: 270px;
+}
+#single-product-img .mask-y {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100px;
+	height: 100px;
+	border: 1px solid #aaa;
+	background: #FEDE4F no-repeat 50% top;
+	opacity: .5;
+	filter: alpha(opacity = 50);
+	z-index: 2;
+}
+#single-product-img .mask-t {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 270px;
+	height: 270px;
+	background: transparent;
+	z-index: 3;
+	cursor: move;
+}
+
+/* 缩略图部分 */
+.product-img-thumbnail-box {
+	position: relative;
+	width: 240px;
+	height: 54px;
+	margin-top: 5px;
+	padding-left: 15px;
+	overflow: hidden;
+}
+.product-img-thumbnail-box ul {
+	width: 300px;
+	height: 54px;
+}
+.product-img-thumbnail-box li {
+	float: left;
+	width: 60px;
+}
+.product-img-thumbnail-box li img {
+	width: 50px;
+	height: 50px;
+	padding: 1px;
+	border: 1px solid #CECFCE;
+}
+.product-img-thumbnail-box li.active img {
+	padding: 0;
+	border: 2px solid #e4393c;
+}
+
+/* 大图细节展示 */
+.big-img-box {
+	display: none;
+	position: absolute;
+	top: 0px;
+	left: 280px;
+	width: 400px;
+	height: 400px;
+	border: 1px solid #E4E4E4;
+	background: #fff;
+	overflow: hidden;
+}
+.big-img-box img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 800px;
+	height: 800px;
+}

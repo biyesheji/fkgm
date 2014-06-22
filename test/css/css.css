@@ -1,0 +1,171 @@
+body,h2,ul,li,a,h3,p {
+	margin: 0px;
+	padding: 0px;
+}
+li {
+	list-style: none;
+}
+a,a:hover {
+	text-decoration: none;
+	font-family: "微软雅黑";
+}
+img {
+	border: none;
+}
+/*清除浮动*/
+.clearfix:after {
+	content:"."; 
+	display:block; 
+	height:0; 
+	visibility:hidden; 
+	clear:both; 
+}
+.clearfix { 
+	*zoom:1; 
+}
+
+.wrap {
+	width: 1000px;
+	margin: 50px auto 0;
+	padding-bottom: 40px;
+}
+.title {
+	width: 180px;
+	float: left;
+	font-family: "微软雅黑";
+	color: #333;
+}
+.title h2 {
+	margin: 14px 0;
+	font-size: 16px;
+}
+.title li {
+	height: 26px;
+	line-height: 26px;
+	margin-bottom: 4px;
+}
+.title li a {
+	display: block;
+	width: 160px;
+	height: 26px;
+	line-height: 26px;
+	text-align: center;
+	color: #333;
+	font-size: 14px;
+}
+.title li a:hover {
+	color: #fff;
+	background: #328fbe;
+}
+.title .active {
+	color: #fff;
+	background: #328fbe;
+}
+
+.cont-wrap {
+	float: right;
+	width: 770px;
+	padding-left: 40px;
+	border-left: 1px solid #aaa;
+	font-family: "微软雅黑";
+}
+.cont-tit {
+	margin: 40px 0 30px;
+}
+.cont li {
+	margin-bottom: 40px;
+	font-family: "微软雅黑";
+}
+.cont li h3 {
+	line-height: 30px;
+	font-size: 13px;
+	font-family: "微软雅黑";
+	font-weight: normal;
+}
+.cont li h3 a {
+	color: #000;
+	font-weight: bold;
+}
+.cont li h3 a:hover,
+.cont p a:hover {
+	color: #ee7700;
+}
+.cont li h3 span {
+	margin-left: 30px;
+}
+.cont p {
+	line-height: 24px;
+	color: #666;
+	font-size: 12px;
+}
+.cont p a {
+	color: #328fbe;
+}
+
+.page {
+	width: 770px;
+	height: 26px;
+	border: 1px solid #d6d6d6;
+	margin: 30px 0 40px;
+	background: #e2e2e2;
+}
+.page .num {
+	float: left;
+	height: 26px;
+}
+.page .num a {
+	float: left;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	margin: 3px 4px 0;
+	line-height: 20px;
+	text-align: center;
+	cursor: pointer;
+}
+.page .num .active,
+.page .num a:hover {
+	background: #666;
+	color: #fff;
+}
+.page .num .active {
+	cursor: text;
+}
+.page .next {
+	float: right;
+	width: 38px;
+	height: 26px;
+	margin-right: 6px;
+	background: url(next.gif) no-repeat center center;
+	cursor: pointer;
+}
+
+/*--------------------------*/
+.cont-cont-tit {
+	font-size: 16px;
+	color: #328fbe;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+.cont-cont {
+	margin-bottom: 40px;
+}
+.cont-cont li {
+	height: 24px;
+	line-height: 24px;
+	color: #666;
+	font-size: 14px;
+}
+.cont-cont li span {
+	display: inline-block;
+	height: 24px;
+	line-height: 24px;
+}
+.cont-cont li span:first-child {
+	width: 440px;
+}
+.cont-cont-text p {
+	font-size: 12px;
+	color: #000;
+	line-height: 24px;
+}

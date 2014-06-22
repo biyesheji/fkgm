@@ -1,6 +1,7 @@
-assets/*
+test/assets/*
+test/videos/*
 !assets/.gitignore
-protected/runtime/*
+test/protected/runtime/*
 !protected/runtime/.gitignore
-protected/data/*.db
+test/protected/data/*.db
 themes/classic/views/
